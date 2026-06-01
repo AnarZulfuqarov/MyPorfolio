@@ -1,0 +1,247 @@
+{
+  "about": {
+    "name": {
+      "az": "Anar Zülfüqarov",
+      "en": "Anar Zulfugarov"
+    },
+    "title": {
+      "az": "Frontend Developer",
+      "en": "Front End Developer"
+    },
+    "summary": {
+      "az": "React istifadə edərək genişlənə bilən veb tətbiqlər dizayn edib inkişaf etdirən Frontend Developer. CRM platformaları, admin panellər və e-ticarət həlləri üzərində iş təcrübəsi var. Redux Toolkit və RTK Query ilə qlobal state idarəsi, biznes tələblərinin analizi və yenidən istifadə edilə bilən komponent arxitekturası üzrə güclü bilikləri var.",
+      "en": "Frontend Developer with experience designing and developing scalable web applications using React. Worked on complex systems including CRM platforms, admin dashboards, and e-commerce solutions. Strong in analyzing business requirements, building reusable component-based architectures, and managing global state with Redux Toolkit and RTK Query."
+    },
+    "email": "zulfuqarov584@gmail.com",
+    "phone": "0775840310",
+    "location": {
+      "az": "Bakı, Azərbaycan",
+      "en": "Baku, Azerbaijan"
+    },
+    "birthDate": "27-03-2004",
+    "linkedin": "https://www.linkedin.com/in/anar-zulfugarov-344052302/",
+    "github": "https://github.com/AnarZulfuqarov"
+  },
+  "projects": [
+    {
+      "id": "proj-1",
+      "name": {
+        "az": "Buyonida — E-ticarət Platforması",
+        "en": "Buyonida — E-commerce Platform"
+      },
+      "description": {
+        "az": "İstifadəçilərə öz onlayn mağazalarını yaratmağa və idarə etməyə imkan verən genişlənə bilən e-ticarət platforması. React ilə modul komponent arxitekturası, Redux Toolkit və RTK Query ilə server state idarəsi.",
+        "en": "Scalable e-commerce platform allowing users to create and manage their own online stores. Frontend architecture using React with modular components, server state managed with Redux Toolkit and RTK Query."
+      },
+      "category": "e-commerce",
+      "imageUrl": "/uploads/project-1780309941701-667901138.png",
+      "siteUrl": "https://buyonida.com",
+      "startDate": "2025-03",
+      "endDate": null
+    },
+    {
+      "id": "project-1780310339614",
+      "name": {
+        "az": "Texnocode — Şirkət Portfolio Veb Saytı",
+        "en": "Texnocode — Company Portfolio Website"
+      },
+      "description": {
+        "az": "Şirkətin korporativ portfolio veb-saytı. React ilə hazırlanmış responsiv interfeys, çoxdilli dəstək (i18n), dark/light tema sistemi, Redux Toolkit və RTK Query ilə state idarəetməsi, REST API inteqrasiyası və modul komponent arxitekturası.",
+        "en": "Corporate portfolio website developed with React. Features a responsive interface, multi-language support (i18n), dynamic dark/light theme system, state management with Redux Toolkit and RTK Query, REST API integration, and a modular component architecture."
+      },
+      "category": "Portfolio",
+      "imageUrl": "/uploads/project-1780310339609-803890438.png",
+      "siteUrl": "https://texnocode.com/",
+      "startDate": "2026-05",
+      "endDate": "2026-05"
+    },
+    {
+      "id": "proj-2",
+      "name": {
+        "az": "Mezuro — E-ticarət Platforması",
+        "en": "Mezuro — E-commerce Platform"
+      },
+      "description": {
+        "az": "Məhsul kəşfi və satın alma prosesini sadələşdirmək üçün nəzərdə tutulmuş yüksək performanslı e-ticarət platforması. Tailwind CSS ilə tam responsiv UI, Redux Toolkit və RTK Query ilə sürətli UX.",
+        "en": "High-performance e-commerce platform to streamline product discovery and purchasing. Fully responsive UI with Tailwind CSS, global state and server-side caching via Redux Toolkit and RTK Query."
+      },
+      "category": "e-commerce",
+      "imageUrl": "/uploads/project-1780309955733-472835043.png",
+      "siteUrl": "https://mezuro.az",
+      "startDate": "2026-02",
+      "endDate": "2026-03"
+    },
+    {
+      "id": "proj-3",
+      "name": {
+        "az": "Kliniken Allianz — Tibbi Turizm Platforması",
+        "en": "Kliniken Allianz — Medical Tourism Platform"
+      },
+      "description": {
+        "az": "Beynəlxalq xəstələri səhiyyə provayderləri ilə birləşdirən tibbi turizm platforması. REST API inteqrasiyası ilə dinamik kontent rendering, cihazlar arasında responsiv layoutlar.",
+        "en": "Medical tourism platform connecting international patients with healthcare providers. Dynamic content rendering via REST API integration, responsive layouts optimized across devices."
+      },
+      "category": "Medical Tourism",
+      "imageUrl": "/uploads/project-1780309962453-922147185.png",
+      "siteUrl": "https://kliniken-allianz.com",
+      "startDate": "2025-08",
+      "endDate": "2025-09"
+    },
+    {
+      "id": "proj-4",
+      "name": {
+        "az": "Technobox — E-ticarət Platforması",
+        "en": "Technobox — E-commerce Platform"
+      },
+      "description": {
+        "az": "Texnologiya və elektronika üzrə ixtisaslaşmış e-ticarət həlli. RTK Query ilə real vaxt rejiminde stok və qiymət yeniləmələri, Tailwind CSS ilə mobil-first dizayn, SEO optimallaşdırması.",
+        "en": "Comprehensive e-commerce solution for technology and electronics. RTK Query for real-time stock and price updates, Tailwind CSS mobile-first design, SEO-friendly structure."
+      },
+      "category": "e-commerce",
+      "imageUrl": "/uploads/project-1780309969301-641015552.png",
+      "siteUrl": "https://technobox.az",
+      "startDate": "2026-03",
+      "endDate": "2026-04"
+    },
+    {
+      "id": "proj-8",
+      "name": {
+        "az": "SSS Construction — Şirkət Portfolio Saytı",
+        "en": "SSS Construction — Company Portfolio Website"
+      },
+      "description": {
+        "az": "İnşaat və təmir layihələrini nümayiş etdirmək üçün portfolio saytı. Müasir CSS texnikaları ilə responsiv layoutlar, təmiz UI strukturu.",
+        "en": "Portfolio website showcasing construction and renovation projects. Responsive layouts with modern CSS techniques, clean UI and maintainable component design."
+      },
+      "category": "Portfolio",
+      "imageUrl": "/uploads/project-1780309998413-160473544.png",
+      "siteUrl": "https://sss-tel.az",
+      "startDate": "2025-04",
+      "endDate": "2025-04"
+    },
+    {
+      "id": "proj-10",
+      "name": {
+        "az": "Victory College — Təhsil Müəssisəsi Saytı",
+        "en": "Victory College — Educational Institution Website"
+      },
+      "description": {
+        "az": "Təhsil müəssisəsi üçün təqdimat saytı. React ilə strukturlaşdırılmış layoutlar və yenidən istifadə edilə bilən komponentlər, performans və responsivlik üçün optimallaşdırılmış.",
+        "en": "Victory College — Educational Institution Website"
+      },
+      "category": "Portfolio",
+      "imageUrl": "/uploads/project-1780310015853-658792156.png",
+      "siteUrl": "https://victory-college-eight.vercel.app",
+      "startDate": "2025-05",
+      "endDate": "2025-05"
+    },
+    {
+      "id": "proj-5",
+      "name": {
+        "az": "Natavan Menu — Restoran Menyu Tətbiqi",
+        "en": "Natavan Menu — Restaurant Menu Application"
+      },
+      "description": {
+        "az": "Restoran müştəriləri üçün tablet yönümlü rəqəmsal menyu tətbiqi. Həm tablet, həm masaüstü mühitə uyğunlaşan responsiv UI, asan kontent yeniləmələri üçün təmiz komponent strukturu.",
+        "en": "Tablet-focused digital menu application for restaurant customers. Responsive UI adaptable for both tablet and desktop, clean component structure for easy content updates."
+      },
+      "category": "web",
+      "imageUrl": "/uploads/project-1780309975929-508766149.png",
+      "siteUrl": "",
+      "startDate": "2025-06",
+      "endDate": "2025-07"
+    },
+    {
+      "id": "proj-6",
+      "name": {
+        "az": "Premier CRM — Təchizat və Sifariş İdarəetmə Sistemi",
+        "en": "Premier CRM — Supply & Order Management System"
+      },
+      "description": {
+        "az": "İşçilər, təchizatçılar və administratorlar üçün çox rollü CRM sistemi. Frontend-də rol əsaslı UI məntiqi, sifariş yaradılması, izlənməsi və çatdırılma iş axınları.",
+        "en": "Multi-role CRM system for employees, suppliers, and administrators. Role-based UI logic and access control on the frontend, order creation, tracking, and delivery workflows."
+      },
+      "category": "crm",
+      "imageUrl": "/uploads/project-1780309984856-293837360.png",
+      "siteUrl": "",
+      "startDate": "2025-07",
+      "endDate": "2025-08"
+    },
+    {
+      "id": "proj-7",
+      "name": {
+        "az": "TonuBy CRM — Maliyyə və Admin İdarəetmə Sistemi",
+        "en": "TonuBy CRM — Financial & Admin Management System"
+      },
+      "description": {
+        "az": "Nağd pul axını, borc izləmə və maliyyə əməliyyatlarını idarə etmək üçün daxili CRM sistemi. Redux Toolkit və RTK Query ilə qlobal state strukturu, filtrasiya, səhifələmə və sıralama imkanlı yenidən istifadə edilə bilən cədvəl komponentləri.",
+        "en": "Internal CRM for managing cash flow, debt tracking, and financial operations. Global state via Redux Toolkit and RTK Query, reusable table components with filtering, pagination, and sorting."
+      },
+      "category": "crm",
+      "imageUrl": "/uploads/project-1780309991333-790814401.png",
+      "siteUrl": "",
+      "startDate": "2025-08",
+      "endDate": "2025-09"
+    },
+    {
+      "id": "proj-9",
+      "name": {
+        "az": "Asterias — Təhsil Xidmətləri Platforması",
+        "en": "Asterias — Educational Services Platform"
+      },
+      "description": {
+        "az": "Təhsil xidmətlərini və proqramları təqdim edən korporativ sayt. Genişlənə bilən React komponentləri, responsiv dizayn.",
+        "en": "Corporate website presenting educational services and programs. Reusable UI sections built with React for scalability, responsive and cross-browser compatible."
+      },
+      "category": "Portfolio",
+      "imageUrl": "/uploads/project-1780310005049-641366515.png",
+      "siteUrl": "",
+      "startDate": "2025-05",
+      "endDate": "2025-06"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "job-1",
+      "company": "TexnoCode",
+      "description": {
+        "az": "Bir neçə veb tətbiq üçün planlama mərhələsindən istehsal yerləşdirməsinə qədər frontend inkişaf proseslərinə rəhbərlik etdi. React və TypeScript istifadə edərək müasir, genişlənə bilən istifadəçi interfeysləri hazırladı. Redux Toolkit, RTK Query ilə daxili idarəetmə sistemləri, dashboard-lar və biznes platformaları qurdu.",
+        "en": "Led frontend development processes from planning to production deployment for multiple web applications. Developed modern and scalable user interfaces using React and TypeScript. Built internal management systems, dashboards, and business-oriented platforms with reusable and maintainable architecture. Managed application state and API communication using Redux Toolkit and RTK Query."
+      },
+      "startDate": "2026-05",
+      "endDate": "",
+      "siteUrl": "https://texnocode.com/"
+    },
+    {
+      "id": "job-2",
+      "company": "Buyonida MMC",
+      "description": {
+        "az": "Frontend xüsusiyyətlərini tələb analizindən istehsal çatdırılmasına qədər tam öhdəsinə aldı. React ilə CRM sistemləri, admin panellər və e-ticarət platformaları üçün genişlənə bilən komponent arxitekturası qurdu. Redux Toolkit və RTK Query ilə qlobal state idarə etdi. RESTful API inteqrasiyaları həyata keçirdi.",
+        "en": "Took full ownership of frontend features from requirement analysis to production delivery. Built scalable and reusable component-based architecture for CRM systems, admin panels, and e-commerce platforms using React. Managed global state using Redux Toolkit and RTK Query. Integrated RESTful APIs and handled loading, error, and edge-case states."
+      },
+      "startDate": "2025-05",
+      "endDate": "2026-05",
+      "siteUrl": "https://buyonida.com"
+    },
+    {
+      "id": "job-3",
+      "company": "Buyonida MMC (Intern)",
+      "description": {
+        "az": "Tam frontend developer roluna keçid zamanı real istehsal layihələrinə töhfə verdi. React və müasir UI kitabxanaları ilə responsiv interfeyslər qurmaqda kömək etdi. Komanda rəhbərliyi altında API inteqrasiyası və state idarəsi tapşırıqlarında iştirak etdi.",
+        "en": "Contributed to real production projects while transitioning into a full frontend developer role. Assisted in building responsive user interfaces using React and modern UI libraries. Participated in API integration and state management tasks under team guidance."
+      },
+      "startDate": "2025-03",
+      "endDate": "2025-05",
+      "siteUrl": "https://buyonida.com"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1780303337419",
+      "name": "Anar ",
+      "email": "anarrz-af106@code.edu.az",
+      "message": "asaasass",
+      "date": "2026-06-01T08:42:17.419Z"
+    }
+  ]
+}

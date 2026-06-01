@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "admin": "Admin",
+    "cv": "Download CV"
+  },
+  "hero": {
+    "greeting": "Hi, I am",
+    "role": "Full-Stack Developer",
+    "bio": "I build modern, high-performance, and user-centric web applications. Specializing in Node.js, Express, React, and modern web platforms. Always excited for new challenges and innovative products.",
+    "socials": "Social Connections",
+    "view_work": "View My Work",
+    "download_cv": "Download CV"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "A curated collection of digital systems I have built recently",
+    "filter_all": "All",
+    "filter_web": "Web",
+    "filter_mobile": "Mobile",
+    "filter_open-source": "Open Source",
+    "view_site": "Live Demo",
+    "no_projects": "No projects found in this category.",
+    "ongoing": "Ongoing",
+    "duration": "Duration"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "My professional career timeline",
+    "ongoing": "Present",
+    "view_company": "Visit Company"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a question or want to work together? Drop me a line!",
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Your Message",
+    "placeholder_name": "Enter your name",
+    "placeholder_email": "example@domain.com",
+    "placeholder_message": "Type your message here...",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Thank you! Your message was sent and registered successfully.",
+    "error": "An error occurred! Please try again in a few moments."
+  },
+  "admin": {
+    "login": {
+      "title": "Admin Login",
+      "password": "Password",
+      "placeholder_password": "Enter admin password",
+      "submit": "Sign In",
+      "error": "Invalid password!",
+      "logout": "Logout"
+    },
+    "dashboard": {
+      "title": "Portfolio Admin Panel",
+      "projects": "Projects",
+      "jobs": "Experience",
+      "messages": "Messages",
+      "add_project": "Add Project",
+      "edit_project": "Edit Project",
+      "add_job": "Add Experience",
+      "edit_job": "Edit Experience",
+      "name_az": "Name (AZ)",
+      "name_en": "Name (EN)",
+      "desc_az": "Description (AZ)",
+      "desc_en": "Description (EN)",
+      "category": "Category",
+      "image": "Image (Upload file)",
+      "site_url": "Site URL",
+      "start_date": "Start Date",
+      "end_date": "End Date (Leave blank if ongoing)",
+      "company": "Company",
+      "actions": "Actions",
+      "save": "Save Changes",
+      "cancel": "Cancel",
+      "delete_confirm": "Are you sure you want to delete this?",
+      "empty": "No items to display.",
+      "logout": "Logout",
+      "back_to_site": "Back to Site",
+      "table_image": "Image",
+      "table_title": "Title",
+      "table_category": "Category",
+      "table_company": "Company",
+      "table_date": "Date",
+      "table_sender": "Sender",
+      "table_email": "Email",
+      "table_message": "Message",
+      "table_sent_at": "Sent At"
+    }
+  }
+}

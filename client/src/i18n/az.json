@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "about": "Haqqımda",
+    "projects": "Layihələr",
+    "experience": "Təcrübə",
+    "contact": "Əlaqə",
+    "admin": "Admin",
+    "cv": "CV Yüklə"
+  },
+  "hero": {
+    "greeting": "Salam, Mən",
+    "role": "Full-Stack Proqramçı",
+    "bio": "Müasir, sürətli və istifadəçi yönümlü veb tətbiqlər hazırlayıram. Node.js, Express, React və müasir veb texnologiyaları üzrə ixtisaslaşmışam. Həmişə yeni çağırışlara və innovativ layihələrə açığam.",
+    "socials": "Sosial Şəbəkələr",
+    "view_work": "İşlərimə Bax",
+    "download_cv": "CV-ni Yüklə"
+  },
+  "projects": {
+    "title": "Layihələrim",
+    "subtitle": "Son dövrlərdə hazırladığım seçilmiş layihələr",
+    "filter_all": "Hamısı",
+    "filter_web": "Veb",
+    "filter_mobile": "Mobil",
+    "filter_open-source": "Açıq Qaynaq",
+    "view_site": "Sayta Get",
+    "no_projects": "Bu kateqoriyada heç bir layihə tapılmadı.",
+    "ongoing": "Davam edir",
+    "duration": "Müddət"
+  },
+  "experience": {
+    "title": "İş Təcrübəm",
+    "subtitle": "Peşəkar fəaliyyət xronologiyam",
+    "ongoing": "Davam edir",
+    "view_company": "Şirkətə keçid"
+  },
+  "contact": {
+    "title": "Mənimlə Əlaqə",
+    "subtitle": "Sualınız var və ya birlikdə işləmək istəyirsiniz? Mənə yazın!",
+    "name": "Adınız",
+    "email": "E-poçt ünvanınız",
+    "message": "Mesajınız",
+    "placeholder_name": "Adınızı daxil edin",
+    "placeholder_email": "example@domain.com",
+    "placeholder_message": "Mesajınızı bura yazın...",
+    "submit": "Mesajı Göndər",
+    "sending": "Göndərilir...",
+    "success": "Təşəkkür edirik! Mesajınız uğurla göndərildi və qeydə alındı.",
+    "error": "Xəta baş verdi! Zəhmət olmasa bir az sonra yenidən cəhd edin."
+  },
+  "admin": {
+    "login": {
+      "title": "Admin Giriş",
+      "password": "Şifrə",
+      "placeholder_password": "Admin şifrəsini daxil edin",
+      "submit": "Daxil Ol",
+      "error": "Şifrə yanlışdır!",
+      "logout": "Çıxış"
+    },
+    "dashboard": {
+      "title": "Portfel İdarəetmə Paneli",
+      "projects": "Layihələr",
+      "jobs": "Təcrübələr",
+      "messages": "Mesajlar",
+      "add_project": "Yeni Layihə",
+      "edit_project": "Layihəni Redaktə Et",
+      "add_job": "Yeni Təcrübə",
+      "edit_job": "Təcrübəni Redaktə Et",
+      "name_az": "Ad (AZ)",
+      "name_en": "Ad (EN)",
+      "desc_az": "Təsvir (AZ)",
+      "desc_en": "Təsvir (EN)",
+      "category": "Kateqoriya",
+      "image": "Şəkil (Yükləyin)",
+      "site_url": "Sayt Linki (URL)",
+      "start_date": "Başlama Tarixi",
+      "end_date": "Bitmə Tarixi (Boş saxlayın əgər davam edirsə)",
+      "company": "Şirkət",
+      "actions": "Əməliyyatlar",
+      "save": "Yadda Saxla",
+      "cancel": "Ləğv Et",
+      "delete_confirm": "Bunu silmək istədiyinizdən əminsiniz?",
+      "empty": "Məlumat yoxdur.",
+      "logout": "Çıxış",
+      "back_to_site": "Sayta Qayıt",
+      "table_image": "Şəkil",
+      "table_title": "Başlıq",
+      "table_category": "Kateqoriya",
+      "table_company": "Şirkət",
+      "table_date": "Tarix",
+      "table_sender": "Göndərən",
+      "table_email": "E-poçt",
+      "table_message": "Mesaj",
+      "table_sent_at": "Göndərilmə vaxtı"
+    }
+  }
+}
