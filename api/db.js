@@ -35,17 +35,6 @@ export async function readDB() {
     }
   }
 
-      // If Upstash Redis is empty, seed it with the contents of db.json
-      console.log('🔄 Upstash Redis is empty. Seeding from db.json...');
-      const localData = await fs.readFile(dbPath, 'utf-8');
-      const parsedData = JSON.parse(localData);
-      await redis.set('portfolio_db', parsedData);
-      return parsedData;
-    } catch (error) {
-      console.error('⚠️ Failed to interact with Upstash Redis (using db.json fallback):', error.message);
-    }
-  }
-
   // Fallback to local db.json if Redis is not configured or fails
   try {
     const localData = await fs.readFile(dbPath, 'utf-8');
