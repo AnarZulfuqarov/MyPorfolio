@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "/client/dist/assets/$1"
+    },
+    {
+      "source": "/uploads/(.*)",
+      "destination": "/client/dist/uploads/$1"
+    },
+    {
+      "source": "/Anar_Zulfugarov_FlowCV_Resume_2026-06-01.pdf",
+      "destination": "/client/dist/Anar_Zulfugarov_FlowCV_Resume_2026-06-01.pdf"
+    },
+    {
+      "source": "/anar.jpg",
+      "destination": "/client/dist/anar.jpg"
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "/client/dist/favicon.ico"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/client/dist/index.html"
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Shield, Key, Eye, EyeOff, ChevronLeft, AlertCircle } from 'lucide-react';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || '';
+const API_BASE_URL = '';
 
 export default function AdminLogin() {
   const { t } = useTranslation();

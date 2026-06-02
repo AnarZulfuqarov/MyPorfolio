@@ -19,7 +19,7 @@ import {
   AlertCircle
 } from 'lucide-react';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || '';
+const API_BASE_URL = '';
 
 export default function Home({ theme, toggleTheme }) {
   const { t, i18n } = useTranslation();
