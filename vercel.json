@@ -7,27 +7,27 @@
     },
     {
       "source": "/assets/(.*)",
-      "destination": "/client/dist/assets/$1"
+      "destination": "/dist/assets/$1"
     },
     {
       "source": "/uploads/(.*)",
-      "destination": "/client/dist/uploads/$1"
+      "destination": "/dist/uploads/$1"
     },
     {
       "source": "/Anar_Zulfugarov_FlowCV_Resume_2026-06-01.pdf",
-      "destination": "/client/dist/Anar_Zulfugarov_FlowCV_Resume_2026-06-01.pdf"
+      "destination": "/dist/Anar_Zulfugarov_FlowCV_Resume_2026-06-01.pdf"
     },
     {
       "source": "/anar.jpg",
-      "destination": "/client/dist/anar.jpg"
+      "destination": "/dist/anar.jpg"
     },
     {
       "source": "/favicon.ico",
-      "destination": "/client/dist/favicon.ico"
+      "destination": "/dist/favicon.ico"
     },
     {
       "source": "/((?!api/).*)",
-      "destination": "/client/dist/index.html"
+      "destination": "/dist/index.html"
     }
   ]
 }
