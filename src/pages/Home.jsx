@@ -33,6 +33,7 @@ export default function Home({ theme, toggleTheme }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('about');
+  const [isLoading, setIsLoading] = useState(true);
 
   // Contact form states
   const [contactForm, setContactForm] = useState({ name: '', email: '', message: '' });
@@ -41,24 +42,26 @@ export default function Home({ theme, toggleTheme }) {
 
   // Fetch data on mount
   useEffect(() => {
-    fetch(`${API_BASE_URL}/api/about`)
-      .then(res => res.json())
-      .then(data => setAbout(data))
-      .catch(err => console.error('Error fetching about data:', err));
-
-    fetch(`${API_BASE_URL}/api/projects`)
-      .then(res => res.json())
-      .then(data => setProjects(data))
-      .catch(err => console.error('Error fetching projects:', err));
-
-    fetch(`${API_BASE_URL}/api/jobs`)
-      .then(res => res.json())
-      .then(data => {
-        // Sort jobs chronologically (latest first)
-        const sortedJobs = data.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
+    setIsLoading(true);
+    Promise.all([
+      fetch(`${API_BASE_URL}/api/about`).then(res => res.json()),
+      fetch(`${API_BASE_URL}/api/projects`).then(res => res.json()),
+      fetch(`${API_BASE_URL}/api/jobs`).then(res => res.json())
+    ])
+      .then(([aboutData, projectsData, jobsData]) => {
+        setAbout(aboutData);
+        setProjects(projectsData);
+        const sortedJobs = jobsData.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
         setJobs(sortedJobs);
+        // Smooth transition micro-delay
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 600);
       })
-      .catch(err => console.error('Error fetching jobs:', err));
+      .catch(err => {
+        console.error('Error fetching portfolio data:', err);
+        setIsLoading(false);
+      });
   }, []);
 
   // Sticky Navbar & Scroll Spy
@@ -144,6 +147,18 @@ export default function Home({ theme, toggleTheme }) {
     const options = { year: 'numeric', month: 'short' };
     return date.toLocaleDateString(currentLang === 'az' ? 'az-AZ' : 'en-US', options);
   };
+
+  if (isLoading) {
+    return (
+      <div className="loader-screen">
+        <div className="loader-content">
+          <Code className="loader-logo animate-pulse" size={48} />
+          <div className="loader-spinner"></div>
+          <p className="loader-text">{currentLang === 'az' ? 'YÜKLƏNİR...' : 'LOADING...'}</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>
