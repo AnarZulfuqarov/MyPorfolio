@@ -6,28 +6,8 @@
       "destination": "/api/index.js"
     },
     {
-      "source": "/assets/(.*)",
-      "destination": "/dist/assets/$1"
-    },
-    {
-      "source": "/uploads/(.*)",
-      "destination": "/dist/uploads/$1"
-    },
-    {
-      "source": "/Anar_Zulfugarov_FlowCV_Resume_2026-06-01.pdf",
-      "destination": "/dist/Anar_Zulfugarov_FlowCV_Resume_2026-06-01.pdf"
-    },
-    {
-      "source": "/anar.jpg",
-      "destination": "/dist/anar.jpg"
-    },
-    {
-      "source": "/favicon.ico",
-      "destination": "/dist/favicon.ico"
-    },
-    {
       "source": "/((?!api/).*)",
-      "destination": "/dist/index.html"
+      "destination": "/index.html"
     }
   ]
 }
