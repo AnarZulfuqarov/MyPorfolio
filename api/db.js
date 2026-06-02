@@ -1,4 +1,4 @@
-import { kv } from '@vercel/kv';
+import { Redis } from '@upstash/redis';
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -7,32 +7,49 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const dbPath = path.join(__dirname, 'db.json');
 
-// Check if Vercel KV environment variables are present
-const isKVConfigured = () => {
-  return !!(process.env.KV_URL || process.env.KV_REST_API_URL);
+// Check if Upstash Redis environment variables are present
+const isRedisConfigured = () => {
+  return !!(process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN);
 };
 
+// Initialize Upstash Redis client if configured
+let redis = null;
+if (isRedisConfigured()) {
+  redis = new Redis({
+    url: process.env.UPSTASH_REDIS_REST_URL,
+    token: process.env.UPSTASH_REDIS_REST_TOKEN,
+  });
+}
+
 export async function readDB() {
-  if (isKVConfigured()) {
+  if (isRedisConfigured() && redis) {
     try {
-      // Read from Vercel KV
-      const data = await kv.get('portfolio_db');
+      // Read from Upstash Redis
+      let data = await redis.get('portfolio_db');
       if (data) {
+        // Sanitize returned value in case it is loaded as a raw JSON string
+        if (typeof data === 'string') {
+          try {
+            data = JSON.parse(data);
+          } catch (e) {
+            // Keep it as string if parsing fails
+          }
+        }
         return data;
       }
 
-      // If Vercel KV is empty, seed it with the contents of db.json
-      console.log('🔄 Vercel KV is empty. Seeding from db.json...');
+      // If Upstash Redis is empty, seed it with the contents of db.json
+      console.log('🔄 Upstash Redis is empty. Seeding from db.json...');
       const localData = await fs.readFile(dbPath, 'utf-8');
       const parsedData = JSON.parse(localData);
-      await kv.set('portfolio_db', parsedData);
+      await redis.set('portfolio_db', parsedData);
       return parsedData;
     } catch (error) {
-      console.error('⚠️ Failed to interact with Vercel KV (using db.json fallback):', error.message);
+      console.error('⚠️ Failed to interact with Upstash Redis (using db.json fallback):', error.message);
     }
   }
 
-  // Fallback to local db.json if KV is not configured or fails
+  // Fallback to local db.json if Redis is not configured or fails
   try {
     const localData = await fs.readFile(dbPath, 'utf-8');
     return JSON.parse(localData);
@@ -43,12 +60,12 @@ export async function readDB() {
 }
 
 export async function writeDB(data) {
-  if (isKVConfigured()) {
+  if (isRedisConfigured() && redis) {
     try {
-      await kv.set('portfolio_db', data);
+      await redis.set('portfolio_db', data);
       return;
     } catch (error) {
-      console.error('⚠️ Failed to write to Vercel KV (falling back to db.json):', error.message);
+      console.error('⚠️ Failed to write to Upstash Redis (falling back to db.json):', error.message);
     }
   }
 
