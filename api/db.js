@@ -24,31 +24,16 @@ if (isRedisConfigured()) {
 export async function readDB() {
   if (isRedisConfigured() && redis) {
     try {
-      // Read from Upstash Redis
-      let data = await redis.get('portfolio_db');
-      if (data) {
-        // Sanitize returned value in case it is loaded as a raw JSON string
-        if (typeof data === 'string') {
-          try {
-            data = JSON.parse(data);
-          } catch (e) {
-            // Keep it as string if parsing fails
-          }
-        }
-
-        // AUTO-HEALING: If the retrieved database is bloated with Base64 strings (> 1MB in serialized size),
-        // overwrite it with the clean local db.json to resolve Upstash 10MB payload warnings.
-        const serializedLength = JSON.stringify(data).length;
-        if (serializedLength > 1024 * 1024) { // 1MB
-          console.log(`🔄 Auto-Healing: Detected bloated Upstash database (${(serializedLength / 1024 / 1024).toFixed(2)} MB). Overwriting with clean db.json...`);
-          const localData = await fs.readFile(dbPath, 'utf-8');
-          const parsedData = JSON.parse(localData);
-          await redis.set('portfolio_db', parsedData);
-          return parsedData;
-        }
-
-        return data;
-      }
+      // FORCE-SYNC: Overwrite Upstash Redis once with the correct clean database mappings
+      const localData = await fs.readFile(dbPath, 'utf-8');
+      const parsedData = JSON.parse(localData);
+      await redis.set('portfolio_db', parsedData);
+      console.log('🔄 Upstash Redis has been force-synced with the correct mappings!');
+      return parsedData;
+    } catch (error) {
+      console.error('⚠️ Failed to force-sync Upstash Redis:', error.message);
+    }
+  }
 
       // If Upstash Redis is empty, seed it with the contents of db.json
       console.log('🔄 Upstash Redis is empty. Seeding from db.json...');

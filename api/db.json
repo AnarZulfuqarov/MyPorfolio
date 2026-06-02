@@ -50,7 +50,7 @@
         "en": "Corporate portfolio website developed with React. Features a responsive interface, multi-language support (i18n), dynamic dark/light theme system, state management with Redux Toolkit and RTK Query, REST API integration, and a modular component architecture."
       },
       "category": "Portfolio",
-      "imageUrl": "/uploads/project-1780309941701-667901138.png",
+      "imageUrl": "/uploads/project-1780310339609-803890438.png",
       "siteUrl": "https://texnocode.com/",
       "startDate": "2026-05",
       "endDate": "2026-05"
@@ -66,7 +66,7 @@
         "en": "High-performance e-commerce platform to streamline product discovery and purchasing. Fully responsive UI with Tailwind CSS, global state and server-side caching via Redux Toolkit and RTK Query."
       },
       "category": "e-commerce",
-      "imageUrl": "/uploads/project-1780309955733-472835043.png",
+      "imageUrl": "/uploads/project-1780309941701-667901138.png",
       "siteUrl": "https://mezuro.az",
       "startDate": "2026-02",
       "endDate": "2026-03"
@@ -82,7 +82,7 @@
         "en": "Medical tourism platform connecting international patients with healthcare providers. Dynamic content rendering via REST API integration, responsive layouts optimized across devices."
       },
       "category": "Medical Tourism",
-      "imageUrl": "/uploads/project-1780309962453-922147185.png",
+      "imageUrl": "/uploads/project-1780309955733-472835043.png",
       "siteUrl": "https://kliniken-allianz.com",
       "startDate": "2025-08",
       "endDate": "2025-09"
@@ -98,7 +98,7 @@
         "en": "Comprehensive e-commerce solution for technology and electronics. RTK Query for real-time stock and price updates, Tailwind CSS mobile-first design, SEO-friendly structure."
       },
       "category": "e-commerce",
-      "imageUrl": "/uploads/project-1780309969301-641015552.png",
+      "imageUrl": "/uploads/project-1780309962453-922147185.png",
       "siteUrl": "https://technobox.az",
       "startDate": "2026-03",
       "endDate": "2026-04"
@@ -114,7 +114,7 @@
         "en": "Portfolio website showcasing construction and renovation projects. Responsive layouts with modern CSS techniques, clean UI and maintainable component design."
       },
       "category": "Portfolio",
-      "imageUrl": "/uploads/project-1780309975929-508766149.png",
+      "imageUrl": "/uploads/project-1780309991333-790814401.png",
       "siteUrl": "https://sss-tel.az",
       "startDate": "2025-04",
       "endDate": "2025-04"
@@ -130,7 +130,7 @@
         "en": "Victory College — Educational Institution Website"
       },
       "category": "Portfolio",
-      "imageUrl": "/uploads/project-1780309984856-293837360.png",
+      "imageUrl": "/uploads/project-1780310005049-641366515.png",
       "siteUrl": "https://victory-college-eight.vercel.app",
       "startDate": "2025-05",
       "endDate": "2025-05"
@@ -146,7 +146,7 @@
         "en": "Tablet-focused digital menu application for restaurant customers. Responsive UI adaptable for both tablet and desktop, clean component structure for easy content updates."
       },
       "category": "web",
-      "imageUrl": "/uploads/project-1780309991333-790814401.png",
+      "imageUrl": "/uploads/project-1780309969301-641015552.png",
       "siteUrl": "",
       "startDate": "2025-06",
       "endDate": "2025-07"
@@ -162,7 +162,7 @@
         "en": "Multi-role CRM system for employees, suppliers, and administrators. Role-based UI logic and access control on the frontend, order creation, tracking, and delivery workflows."
       },
       "category": "crm",
-      "imageUrl": "/uploads/project-1780309998413-160473544.png",
+      "imageUrl": "/uploads/project-1780309975929-508766149.png",
       "siteUrl": "",
       "startDate": "2025-07",
       "endDate": "2025-08"
@@ -178,7 +178,7 @@
         "en": "Internal CRM for managing cash flow, debt tracking, and financial operations. Global state via Redux Toolkit and RTK Query, reusable table components with filtering, pagination, and sorting."
       },
       "category": "crm",
-      "imageUrl": "/uploads/project-1780310005049-641366515.png",
+      "imageUrl": "/uploads/project-1780309984856-293837360.png",
       "siteUrl": "",
       "startDate": "2025-08",
       "endDate": "2025-09"
@@ -194,7 +194,7 @@
         "en": "Corporate website presenting educational services and programs. Reusable UI sections built with React for scalability, responsive and cross-browser compatible."
       },
       "category": "Portfolio",
-      "imageUrl": "/uploads/project-1780310015853-658792156.png",
+      "imageUrl": "/uploads/project-1780309998413-160473544.png",
       "siteUrl": "",
       "startDate": "2025-05",
       "endDate": "2025-06"
