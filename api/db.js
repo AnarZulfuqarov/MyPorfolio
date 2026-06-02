@@ -35,6 +35,18 @@ export async function readDB() {
             // Keep it as string if parsing fails
           }
         }
+
+        // AUTO-HEALING: If the retrieved database is bloated with Base64 strings (> 1MB in serialized size),
+        // overwrite it with the clean local db.json to resolve Upstash 10MB payload warnings.
+        const serializedLength = JSON.stringify(data).length;
+        if (serializedLength > 1024 * 1024) { // 1MB
+          console.log(`🔄 Auto-Healing: Detected bloated Upstash database (${(serializedLength / 1024 / 1024).toFixed(2)} MB). Overwriting with clean db.json...`);
+          const localData = await fs.readFile(dbPath, 'utf-8');
+          const parsedData = JSON.parse(localData);
+          await redis.set('portfolio_db', parsedData);
+          return parsedData;
+        }
+
         return data;
       }
 
