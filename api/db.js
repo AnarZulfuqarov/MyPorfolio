@@ -24,14 +24,28 @@ if (isRedisConfigured()) {
 export async function readDB() {
   if (isRedisConfigured() && redis) {
     try {
-      // FORCE-SYNC: Overwrite Upstash Redis once with the correct clean database mappings
+      // Read from Upstash Redis
+      let data = await redis.get('portfolio_db');
+      if (data) {
+        // Sanitize returned value in case it is loaded as a raw JSON string
+        if (typeof data === 'string') {
+          try {
+            data = JSON.parse(data);
+          } catch (e) {
+            // Keep it as string if parsing fails
+          }
+        }
+        return data;
+      }
+
+      // If Upstash Redis is empty, seed it with the contents of db.json
+      console.log('🔄 Upstash Redis is empty. Seeding from db.json...');
       const localData = await fs.readFile(dbPath, 'utf-8');
       const parsedData = JSON.parse(localData);
       await redis.set('portfolio_db', parsedData);
-      console.log('🔄 Upstash Redis has been force-synced with the correct mappings!');
       return parsedData;
     } catch (error) {
-      console.error('⚠️ Failed to force-sync Upstash Redis:', error.message);
+      console.error('⚠️ Failed to interact with Upstash Redis (using db.json fallback):', error.message);
     }
   }
 
